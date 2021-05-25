@@ -2,6 +2,7 @@ import React from 'react';
 import {
   InitialPage,
   RegisterPage,
+  DetailsPage,
 } from './pages/index';
 
 import {
@@ -21,6 +22,7 @@ function App() {
         </Route>
           <Route exact path="/home" component={ InitialPage } />
           <Route exact path="/register" component={ RegisterPage } />
+          <Route exact path='/details-values' component={ DetailsPage } />
       </Switch>
     </BrowserRouter>
     </div>
