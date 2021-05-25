@@ -7,6 +7,8 @@ import Inputs from './Inputs';
 import DetailsInputs from './DetailsInputs';
 import SharedDescription from './SharedDescription';
 import LongTerm from './LongTerm';
+import ComingSoon from './ComingSoon';
+import DetailsPageFooter from './DetailsPageFooter';
 
 export {
   AboutArticle,
@@ -18,4 +20,6 @@ export {
   DetailsInputs,
   SharedDescription,
   LongTerm,
+  ComingSoon,
+  DetailsPageFooter,
 }

@@ -3,6 +3,8 @@ import {
   DetailsInputs,
   SharedDescription,
   LongTerm,
+  ComingSoon,
+  DetailsPageFooter,
 } from '../components/Index';
 
 function DetailsPage () {
@@ -11,6 +13,8 @@ function DetailsPage () {
       <DetailsInputs />
       <SharedDescription />
       <LongTerm />
+      <ComingSoon />
+      <DetailsPageFooter />
     </div>
   )
 }
