@@ -1,9 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom'
 
 function Description() {
   return (
-    <section>
+    <section className='share-container'>
+      <img
+        src='https://lh3.googleusercontent.com/NQsrk40CjS8u9zQu8Nrzkk8lSr7-XHrS93rQStfkHkOgOgtBCGeAZUyY46aN-N3bCFcM5zMjpYTGCZnbFRxmMsz_i4G5_4rBFH3o=w0'
+        alt='map location'
+        className='map'
+      />
       <h3>Share your Home, nanny and costs</h3>
       <p>
         You have a fantastic home, a fantastic nanny and wouldn't cutting your costs in half be,
@@ -13,7 +18,7 @@ function Description() {
         together has the power to create new affordable solutions in childcare that work for you
         and your community.
       </p>
-      <Link>
+      <Link to='/register'>
         Ready to get Started?
       </Link>
     </section>
