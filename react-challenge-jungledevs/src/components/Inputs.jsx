@@ -3,18 +3,22 @@ import { Redirect } from 'react-router-dom';
 import api from '../services/api.js'
 
 function Inputs () {
-  const [nome, setNome] = useState('');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [redirect, setRedirect] = useState(false)
 
   const sendUserInformation = (name, email) => {
-    api.post('posts', {name, email});
+    try {
+      api.post('challenge-newsletter/', {name, email});
+    } catch (e) {
+      console.log(e)
+    }
     setRedirect(true);
   }
 
   const emailChange = (e) => setEmail(e.target.value);
-  const nameChange = (e) => setNome(e.target.value);
-  if (redirect == true) {
+  const nameChange = (e) => setName(e.target.value);
+  if (redirect === true) {
     return <Redirect to='/details-values' />
   } else { return (
     <div className='register-inputs'>
@@ -28,7 +32,7 @@ function Inputs () {
       ></input>
       <button
         className='send-button'
-        onClick={() => sendUserInformation(nome, email)}
+        onClick={() => sendUserInformation(name, email)}
       >Send</button>
     </div>
   )};

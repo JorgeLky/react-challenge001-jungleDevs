@@ -29,7 +29,7 @@ function AboutArticle () {
           </div>
         </article>
         <Link className='about-link'>
-          <img src={playIcon} width='50px' />
+          <img src={ playIcon } width='50px' alt='play-video-icon' />
           <p className='link'>
             See Hapu in action (27 Seconds)
           </p>
