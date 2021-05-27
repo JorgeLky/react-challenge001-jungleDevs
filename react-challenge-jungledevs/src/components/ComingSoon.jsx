@@ -1,9 +1,10 @@
 import React from 'react';
+import babyIcon2 from '../icons/babyIcon2.svg'
 
 function ComingSoon () {
   return(
-    <article>
-      [image here]
+    <article className='coming-soon-component'>
+      <img src={babyIcon2} alt='baby icon' className='baby-icon'/>
       <h3>Coming soon: Nanny Share Daily Diary!</h3>
       <p>
         With the hapu daily diary your nanny will be able to update you and

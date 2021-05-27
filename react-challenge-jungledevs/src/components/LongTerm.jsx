@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function LongTerm () {
   return (
-    <article>
+    <article className='long-term'>
       <h3>A framework built for the long term</h3>
       <p>
         Childcare is for the long term. And you need a framework you can count on

@@ -1,15 +1,6 @@
 .register-header {
+  margin-top: 20%;
   text-align: center;
-}
-
-.register-inputs {
-  display: flex;
-  flex-flow: column;
-}
-
-.register-input {
-  margin: 5px;
-  height: 25px;
 }
 
 .send-button {
@@ -18,4 +9,22 @@
   border: none;
   background-color: #00FA9A;
   border-radius: 5px;
+}
+
+.register-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .register-inputs {
+    display: flex;
+    flex-flow: column;
+  }
+  
+  .register-input {
+    margin: 5px;
+    height: 25px;
+  }
 }

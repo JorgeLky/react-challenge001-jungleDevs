@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function SharedDescription() {
   return (
-    <article>
+    <article className='shared-description-container'>
       <h3>Shared Payments made simple</h3>
       <p>
         Sometimes it's hard enougth just sharing a restaurant bill.
