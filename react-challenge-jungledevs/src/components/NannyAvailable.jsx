@@ -1,17 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import '../Css/initialpage.css';
+import nannyicon from '../icons/nannyicon.svg';
 
 function NannyAvailable () {
   return (
-    <section>
-      <img />
-      [Image here]
-      <Link>
-        <div>
-          Sarah's day care available now in North Sydney
-        </div>
-      </Link>
-      <p>
+    <section className='Mcphee-container'>
+      <div className='nanny-container'>
+        <img
+          src={ nannyicon }
+          alt='nanny available'
+          className='nanny-example'
+          />
+        <Link className='nanny-link'>
+            Sarah's day care available now in North Sydney
+        </Link>
+      </div>
+      <p className='date'>
         Wednesdey, Thursday, Friday - 7:30 - 5:30
       </p>
     </section>

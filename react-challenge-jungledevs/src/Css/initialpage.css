@@ -1,0 +1,156 @@
+.top-menu {
+  display: flex;
+  width: 100%;
+  background-color: #8f26ca;
+  flex-direction: row;
+}
+
+.Mcphee-container {
+  padding-top: 10px;
+  background-color: #F8F8FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nanny-container {
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  font-size: 0.7em;
+  color: #808080;
+}
+
+.description-container {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.description-text {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.map {
+  max-width: 300px;
+}
+
+.nanny-example {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: center;
+  padding-bottom: 10px;
+}
+
+.about-article {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #8f26ca;
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 10%;
+  color: #F8F8FF;
+  text-decoration: none;
+}
+
+.about-link {
+  color: #F8F8FF;
+  position: center;
+}
+
+.desktop {
+  color: #F8F8FF;
+  margin-top: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.left-nav {
+  width: 70%;
+  display: flex;
+}
+
+.right-nav {
+  display: flex;
+  width: 20%;
+}
+
+.logo {
+  background-color: #00b37d;
+  border-end-end-radius: 50%;
+  border-end-start-radius: 50%;
+  border: none;
+}
+
+.share-container {
+  text-align: center;
+
+}
+
+.nanny-host {
+  width: 500px;
+  color: #F8F8FF;
+  background-color:#00b37d;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.manage-nanny {
+  color: #000000;
+  background-color: #F8F8FF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  position: absolute;
+  left: 70%;
+  height: 5em;
+  padding-bottom: 2%;
+}
+
+.nanny-icon {
+  width: 50%;
+  margin-top: 3%;
+}
+
+.woman-icon {
+  width: 30%;
+  margin-top: 3%;
+}
+
+.notification {
+  margin-right: 3%;
+}
+
+.link-register {
+  margin-bottom: 5%;
+}
+
+@media (max-width: 1000px) {
+  .desktop {
+    display: none;
+  }
+
+  .description-container {
+    flex-direction: column;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+
+  .map {
+    width: 50%;
+    margin-left: 25%;
+  }
+};
