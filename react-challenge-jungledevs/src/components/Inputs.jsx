@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import api from '../services/api.js'
+import validateEmail from '../services/validation';
 
 function Inputs () {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [redirect, setRedirect] = useState(false)
+  const [redirect, setRedirect] = useState(false);
 
   const sendUserInformation = (name, email) => {
     try {
@@ -16,7 +17,9 @@ function Inputs () {
     setRedirect(true);
   }
 
-  const emailChange = (e) => setEmail(e.target.value);
+  const emailChange = (e) => {
+    setEmail(e.target.value);
+  }
   const nameChange = (e) => setName(e.target.value);
   if (redirect === true) {
     return <Redirect to='/details-values' />
@@ -33,6 +36,7 @@ function Inputs () {
       <button
         className='send-button'
         onClick={() => sendUserInformation(name, email)}
+        disabled={validateEmail(email) == false}
       >Send</button>
     </div>
   )};
