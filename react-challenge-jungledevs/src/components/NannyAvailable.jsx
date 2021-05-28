@@ -11,6 +11,7 @@ function NannyAvailable () {
           src={ nannyicon }
           alt='nanny available'
           className='nanny-example'
+          data-testid='nanny-representation'
           />
         <Link className='nanny-link'>
             Sarah's day care available now in North Sydney
