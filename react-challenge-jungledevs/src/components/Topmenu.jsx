@@ -8,7 +8,7 @@ function TopMenu () {
     <header className='top-menu'>
       <div className='left-nav'>
       <button className='logo'>
-        <img src={ babyIcon } height='50px' alt='baby representation icon' />
+        <img src={ babyIcon } height='50px' alt='baby representation icon' data-testid='baby-icon'/>
       </button>
       <Link className='desktop'>Create Your Nanny Share</Link>
       <Link className='desktop'>Browse Shares</Link>

@@ -5,7 +5,7 @@ function LongTerm () {
   return (
     <article className='long-term'>
       <h3>A framework built for the long term</h3>
-      <p>
+      <p data-testid="body-article-long-term">
         Childcare is for the long term. And you need a framework you can count on
         that gives your share long term viability and success. That's why we've defined
         Hapu around our there tribal principles; clearly defined process, transparency

@@ -14,7 +14,7 @@ function AboutArticle () {
             Hapu is Airbnb for nanny share. Share your home, nanny and costs and create new flexible,
             affordable solutions in child care
           </p>
-          <div className='desktop manage-nanny'>
+          <div className='desktop manage-nanny' data-testid='manage-nanny'>
             <div>
               <img src={ nannyicon } alt='nanny icon' className='nanny-icon' />
               <strong>Kate</strong>
@@ -29,7 +29,7 @@ function AboutArticle () {
           </div>
         </article>
         <Link className='about-link'>
-          <img src={ playIcon } width='50px' alt='play-video-icon' />
+          <img src={ playIcon } width='50px' alt='play-video-icon' data-testid='play-icon'/>
           <p className='link'>
             See Hapu in action (27 Seconds)
           </p>

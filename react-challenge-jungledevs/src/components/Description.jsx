@@ -7,9 +7,9 @@ function Description() {
     <section className="share-container">
       <h2>Share your Home, nanny and costs</h2>
       <div className="description-container">
-        <img src={mapIcon} alt="map location" className="map" />
+        <img src={ mapIcon } alt="map location" className="map" />
         <div className="description-text">
-          <p>
+          <p data-testid='paragraph-description'>
             You have a fantastic home, a fantastic nanny and wouldn't cutting
             your costs in half be, well, fantastic?! If only it was easy to
             connect with other parents to share your costs? Well now it is, with
