@@ -30,14 +30,17 @@ function Inputs() {
           onChange={(e) => nameChange(e)}
           placeholder="Your name"
           className="register-input"
+          data-testid = "name-input"
         ></input>
         <input
           onChange={(e) => emailChange(e)}
           placeholder="Your email"
           className="register-input"
+          data-testid = "email-input"
         ></input>
         <button
           className="send-button"
+          data-testid="send-button"
           onClick={() => sendUserInformation(name, email)}
           disabled={validateEmail(email) === false}
         >
