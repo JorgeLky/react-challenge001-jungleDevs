@@ -5,7 +5,7 @@ function SharedDescription() {
   return (
     <article className='shared-description-container'>
       <h3>Shared Payments made simple</h3>
-      <p>
+      <p data-testid='body-article-shared-description'>
         Sometimes it's hard enougth just sharing a restaurant bill.
         Try sharing that bill week in, week out and you might encounter
         more than a few snares. But not with Hapu. Simply set your rates

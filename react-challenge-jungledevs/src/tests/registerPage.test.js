@@ -14,7 +14,7 @@ describe('register page component', () => {
     render(<App />);
     const nameInput = screen.getByTestId('name-input');
     const emailInput = screen.getByTestId('email-input');
-    const sendButton = screen.getByTestId('send-button')
+    const sendButton = screen.getByTestId('send-button');
     expect(nameInput).toBeInTheDocument();
     expect(emailInput).toBeInTheDocument();
     expect(sendButton).toBeInTheDocument();

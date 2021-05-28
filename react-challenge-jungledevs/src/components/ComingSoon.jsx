@@ -6,7 +6,7 @@ function ComingSoon () {
     <article className='coming-soon-component'>
       <img src={babyIcon2} alt='baby icon' className='baby-icon'/>
       <h3>Coming soon: Nanny Share Daily Diary!</h3>
-      <p>
+      <p data-testid="body-article-comming-soon">
         With the hapu daily diary your nanny will be able to update you and
         your sharers with photos and commentary of the day.
         You and sharers will receive notifications and you'll be able to login
